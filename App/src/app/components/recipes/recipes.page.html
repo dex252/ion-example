@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons style="display:inline-block;">
+            <ion-back-button [disabled]="disabled"></ion-back-button>
+        </ion-buttons>
+        <ion-title>recipes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-button size="large" [disabled]="disabled" (click)="Refresh()">
+        <p no-margin text-lowercase><ion-label> Refresh</ion-label></p>
+    </ion-button>
+    <ion-button size="large" [disabled]="disabled" (click)="Add()">
+        <p no-margin text-lowercase><ion-label> Add</ion-label></p>
+    </ion-button>
+    
+    <ion-col>
+        <ion-list>
+            <ion-item-sliding>
+                <ion-card *ngFor="let item of collection" [disabled]="disabled">
+
+                    <ion-card (click)="SelectItem(item)">
+                        <ion-label style="color: black; font-size: 20px; display: block">
+                            {{item.title}}
+                        </ion-label>
+                       
+                    </ion-card>
+                    
+                </ion-card>
+            </ion-item-sliding>
+        </ion-list>
+    </ion-col>
+
+</ion-content>

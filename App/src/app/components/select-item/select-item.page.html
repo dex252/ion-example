@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons style="display:inline-block;">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Recipe</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label style="display: block;">{{item.title}}</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-textarea style="display: block;" [(ngModel)]="item.text" ngDefaultControl [disabled]="false" maxlength="1000"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+        <ion-button size="large" (click)="Delete()">
+            <p no-margin text-lowercase><ion-label> Delete Recipe</ion-label></p>
+        </ion-button>
+    </ion-item>
+</ion-content>

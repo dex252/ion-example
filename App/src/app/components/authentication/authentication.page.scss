@@ -1,0 +1,55 @@
+:root {
+  --ion-color-mycolor: #598597;
+  --ion-color-mycolor-rgb: 89,133,151;
+  --ion-color-mycolor-contrast: #ffffff;
+  --ion-color-mycolor-contrast-rgb: 255,255,255;
+  --ion-color-mycolor-shade: #4e7585;
+  --ion-color-mycolor-tint: #6a91a1;
+}
+
+.ion-color-mycolor {
+  --ion-color-base: var(--ion-color-mycolor);
+  --ion-color-base-rgb: var(--ion-color-mycolor-rgb);
+  --ion-color-contrast: var(--ion-color-mycolor-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-mycolor-contrast-rgb);
+  --ion-color-shade: var(--ion-color-mycolor-shade);
+  --ion-color-tint: var(--ion-color-mycolor-tint);
+}
+
+ion-img {
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+}
+
+.home{
+  color: red;
+  background: #ffffff;
+  border: black;
+  align-items: center;
+  align-content: center;
+  height: 60%;
+  padding: 5% 10% 10% 10%;
+}
+
+.input{
+  display:block;
+  position: relative;
+  margin:0 auto;
+  color: rgba(3, 90, 14, 0.959);
+  align-content: center;
+  border: 1px solid #000000;
+  margin-top: 5%;
+  font-size: 24px;
+}
+
+.button{
+  display:block;
+  position: relative;
+  margin:5% auto;
+  width: 50%;
+  height: 20%;
+  font-size: 24px;
+  --border-radius:40px;
+  color: rgba(1, 3, 19, 0.733);
+}

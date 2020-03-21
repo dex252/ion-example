@@ -1,0 +1,8 @@
+{
+  "name": "Inspector",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

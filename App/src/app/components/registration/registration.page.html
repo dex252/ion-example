@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons style="display:inline-block;">
+            <ion-back-button [disabled]="disabled"></ion-back-button>
+        </ion-buttons>
+        <ion-title>registration</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-input class="input" placeholder="Введите логин" ngDefaultControl [(ngModel)]="login" [disabled]="disabled"></ion-input>
+    <ion-input class="input" placeholder="Введите пароль" type="password" ngDefaultControl [(ngModel)]="password" [disabled]="disabled"></ion-input>
+    <ion-input class="input" placeholder="Введите имя" ngDefaultControl [(ngModel)]="name" [disabled]="disabled"></ion-input>
+    <ion-button size="large" [disabled]="disabled" (click)="Registration()">
+        <p no-margin text-lowercase><ion-label> Регистрация</ion-label></p>
+    </ion-button>
+</ion-content>

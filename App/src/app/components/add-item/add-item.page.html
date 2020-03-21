@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons style="display:inline-block;">
+            <ion-back-button [disabled]="disabled"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Add new recipe</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-textarea style="display: block;" [(ngModel)]="item.title" placeholder="Recipe name" maxlength="100"></ion-textarea>
+    </ion-item>
+    <ion-item>
+        <ion-textarea style="display: block;" [(ngModel)]="item.text" placeholder="Text" maxlength="1000"></ion-textarea>
+    </ion-item>
+    <ion-item>
+        <ion-button size="large" (click)="Add()">
+            <p no-margin text-lowercase><ion-label> Add Recipe</ion-label></p>
+        </ion-button>
+    </ion-item>
+</ion-content>
